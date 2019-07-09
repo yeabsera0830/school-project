@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/homestyles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap/css/bootstrap.min.css" />
+    <script src="css/bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="masterCont">
+        <div class="Cont leftCont">
+            <h2><center>Uploads</center></h2>
+            <hr>
+            <div style="overflow:auto">
+                <div id="" class="uploads">
+                    <div class="TypeIcon"></div>
+                    <div class="FileName">
+                        <p>kasdfhasgfdkagasdasdasdasdasdasdasdasdadsk</p>                                          
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary">Open <span class="glyphicon glyphicon-new-window"></span></button>
+                        <button class="btn btn-primary">Download <span class="glyphicon glyphicon-save"></span></button>
+                        <button class="btn btn-primary">Share <span class="glyphicon glyphicon-share-alt"></span></button>
+                    </div>
+                                   
+
+                </div>
+                <div id="" class="uploads">
+                        <div class="TypeIcon"></div>
+                        <div class="FileName">
+                            <p>kasdfhasgfdkagasdasdasdasdasdasdasdasdadsk</p>                                          
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary">Open <span class="glyphicon glyphicon-new-window"></span></button>
+                            <button class="btn btn-primary">Download <span class="glyphicon glyphicon-save"></span></button>
+                            <button class="btn btn-primary">Share <span class="glyphicon glyphicon-share-alt"></span></button>
+                        </div>
+                                       
+    
+                    </div>
+                    <div id="" class="uploads">
+                            <div class="TypeIcon"></div>
+                            <div class="FileName">
+                                <p>kasdfhasgfdkagasdasdasdasdasdasdasdasdadsk</p>                                          
+                            </div>
+                            <div class="actions">
+                                <button class="btn btn-primary">Open <span class="glyphicon glyphicon-new-window"></span></button>
+                                <button class="btn btn-primary">Download <span class="glyphicon glyphicon-save"></span></button>
+                                <button class="btn btn-primary">Share <span class="glyphicon glyphicon-share-alt"></span></button>
+                            </div>
+                                           
+        
+                        </div>
+                
+            </div>
+        </div>
+        <div class="Cont header">
+            <h1><center>ጎተራ</center></h1>
+        </div>
+        <div class="Cont centerCont">
+            <h2><center>Upload your files to their heaven</center></h2>
+            <div class="formCont">
+                <label for="upfile">Select a file</label>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="" id="upfile">
+                    <p id="path"></p>
+                    <button type="submit">Upload <span class="glyphicon glyphicon-upload"></span></button>
+                </form>
+            </div>
+        </div>
+        <div class="Cont rightCont"></div>
+    </div>
+    
+</body>
+<script>
+   
+   setInterval(function pather(obj){
+        if($("#upfile").val() != "")
+            $("#path").text($("#upfile").val());
+   },1000);   
+</script>
+</html>

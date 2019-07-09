@@ -1,0 +1,468 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+   background: url("../res/files-1614223_1280.jpg");
+   background-size: 100%;
+   
+}
+.MasterCont{
+    display: flex;
+    flex-direction: column;
+    height: 2240px;
+    width: 100%;
+    
+}
+.headerT{
+    font-size: 200px;
+    text-align: center;
+    color: white;
+    animation: HeaderAni 600ms ;
+}
+.IntroCont{
+    order: 1;
+    height: 990px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+.IntroTextCont{
+    width: 50%;
+    height: 35%;
+    margin-left: 27%;
+    animation: IntroAni 800ms;
+}
+.IntroTextCont > p{
+    font-size: 340%;
+    color: white;
+}
+.GetStarted{
+    margin-left: 39%;
+    height: 65px;
+    width: 25%;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    transition: background-color,color 400ms ease;
+    animation: GsAni 1s;
+    
+}
+.GetStarted:hover{
+    background-color: white;
+    border-radius: 3%;
+    color: black;
+
+}
+.LgSgCont{
+    order: 2;
+    height: 990px;
+    width: 100%;
+}
+.GroupMembersCont{
+    order: 3;
+    height: 360px;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+}
+.overlay{
+    width: 240px;
+    height: 320px;
+    background-color: black;
+    transition: 500ms ease;
+    opacity: 0;
+    position: absolute;
+    top: 202%;
+    
+}
+.hoverEmail{
+    position: relative;
+    opacity: 0;
+    margin-top: -140px;
+    transition: 500ms ease;
+    color: white;
+    margin-left: 15px;
+}
+.hoverPhone{
+    position: relative;
+    opacity: 0;
+    transition: 500ms ease;
+    color: white;
+    margin-left: 15px;
+}
+.DevIcon{
+    height: 93%;
+    width: 12.5%;
+    margin-left: .8%;
+    margin-right: .8%;
+    float: left;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.imageframe{
+    width: 100%;
+    height: 70%;
+}
+.imageframe:hover .overlay{
+    opacity: .8;
+}
+#if1:hover #o1e{
+    opacity: 1;
+}
+#if1:hover #o1p{
+    opacity: 1;
+}
+/*2nd nigga*/
+#if2:hover #o2e{
+    opacity: 1;
+}
+#if2:hover #o2p{
+    opacity: 1;
+}
+/*3rd nigga*/
+#if3:hover #o3e{
+    opacity: 1;
+}
+#if3:hover #o3p{
+    opacity: 1;
+}
+/*4th nigga*/
+#if4:hover #o4e{
+    opacity: 1;
+}
+#if4:hover #o4p{
+    opacity: 1;
+}
+/*5th nigga*/
+#if5:hover #o5e{
+    opacity: 1;
+}
+#if5:hover #o5p{
+    opacity: 1;
+}
+/*6th nigga*/
+#if6:hover #o6e{
+    opacity: 1;
+}
+#if6:hover #o6p{
+    opacity: 1;
+}
+/*7th nigga*/
+#if7:hover #o7e{
+    opacity: 1;
+}
+#if7:hover #o7p{
+    opacity: 1;
+}
+.discframe{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background-color: black;
+}
+.pic{
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    height: 51%;
+    width: 30%;
+    background-color: #333333;
+    margin-left: 35%;
+    margin-top: 10%;
+    position: absolute;
+    border-radius:3px;
+    animation-name: WrapperAni;
+    animation-duration: 800ms;
+    color: white;
+    
+}
+.discCont{
+    font-size: 360%;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 4px 4px black;
+    color: white;
+}
+.usernameCont{
+    height: 80px;
+    text-shadow: 1px 4px 4px black;
+}
+.passwordCont{
+    height: 80px;
+    text-shadow: 1px 4px 4px black;
+}
+.buttonCont{
+    height: 80px;
+}
+#usname{
+    width: 50%;
+    float: right;
+    margin: 20px;
+    box-shadow: 1px 4px 4px black;
+}
+#psd{
+    width: 50%;
+    float: right;
+    margin: 20px;
+    box-shadow: 1px 4px 4px black;
+}
+#sgn{
+    height: 70%;
+    float: left;
+    margin-left: 20px;
+    border-radius: 3px;
+    background-color: white;
+    border-color: #454545;
+    font-size: 20px;
+    color: black;
+    transition: font-size 200ms ease;
+}
+#lgn{
+    height: 70%;
+    float: right;
+    margin-right: 20px;
+    border-radius: 3px;
+    background-color: #454545;
+    border-color: white;
+    font-size: 20px;
+    transition: font-size 200ms ease;
+}
+#sgn:hover{
+    border: 0;
+    font-size: 22px;
+}
+#lgn:hover{
+    border: 0;
+    font-size: 22px;
+}
+.wrapperS{
+    display: none;
+    width: 30%;
+    background-color: #333333;
+    margin-top: 10%;
+    position: absolute;
+    border-radius:3px;
+    animation-name: WrapperSAni;
+    animation-duration: 800ms;
+    margin-left: 65.2%;
+    height: 52%;
+}
+.wrapperS > form > div > input{
+    width: 60%;
+    margin-right: 3%;
+    padding: 1%;
+    float: right;
+    margin: 2%;
+}
+.wrapperS > form > div {
+    height: 55px;
+    width: auto;
+}
+.wrapperS > form > div > p{
+    color: white;
+    font-size: 24px;
+    width: 35%;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.wrapperS > form > .buttonCont >input{
+    margin-left: 40%;
+    width: 30%;
+    height: 40px;
+    border-radius: 2px;
+    border-color: white;
+    background-color: #333333;
+    transition: font-size 200ms ease;
+}
+.wrapperS > form > .buttonCont >input:hover{
+    border-color: #333333;
+    font-size: 18px;
+    
+}
+
+.header1{
+    position: fixed;
+    background-color:black;
+    opacity: 0.6;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 12%;
+}
+.headertext{
+    position: fixed;
+    opacity: 1;
+    color: white;
+    font-size: 800%;
+    left: 20%;
+    top: -2%;
+    z-index: 200;
+    animation-name: HeadertextAni;
+    animation-duration: 800ms;
+}
+.footer{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 118%;
+    background-color: black;
+    opacity: 0.8;
+}
+.grpmbrs{
+    position: fixed;
+    height: 50px;
+    width: 200px;
+    top: 17%;
+    background-color: #333333;
+    border-radius: 2px;
+    transition: height 400ms ease-in-out;
+    color: white;
+    font-size: 27px;
+    padding: 2px;
+    animation-name: grptextAni;
+    animation-duration: 800ms;
+}
+.grpmbrs:hover{
+    
+    height: 400px;
+    
+}
+/*Animations*/
+@keyframes IntroAni{
+    0%{
+        margin-left: 0%;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 27%;
+        opacity: 1;
+    }
+}
+@keyframes GsAni{
+    0%{
+        margin-left: 0%;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 39%;
+        opacity: 1;
+    }
+}
+@keyframes HeaderAni{
+    0%{
+        margin-left: -75%;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 1;
+    }
+}
+@keyframes WrapperAni{
+    0%{
+        left:-627px;
+        opacity: 0;
+    }
+    100%{
+        left:0px;
+        opacity: 1;
+    }
+
+}
+@keyframes WrapperSAni{
+    0%{
+        margin-left:35.2%;
+        opacity: 0;
+        height: 30%;
+    }
+    100%{
+        margin-left: 65.2%;
+        opacity: 1;
+        height: 52%;
+    }
+
+}
+@keyframes grptextAni{
+    0%{
+        left:100%;
+        opacity: 0;
+    }
+    100%{
+        left:0;
+        opacity: 1;
+    }
+}
+@keyframes HeadertextAni{
+    0%{
+        left:0%;
+        opacity: 0;
+    }
+    100%{
+        left:20%;
+        opacity: 1;
+    }
+}
+/*///////////////////////////////////Phone css/////////////////////////////*/
+/*///////////////////////////////////Phone css/////////////////////////////*/
+/*///////////////////////////////////Phone css/////////////////////////////*/
+/*///////////////////////////////////Phone css/////////////////////////////*/
+/*///////////////////////////////////Phone css/////////////////////////////*/
+
+@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+        .MasterCont{
+            height: 2864px !important;
+        }
+
+            
+        .IntroTextCont > p{
+            font-size: 216%;
+        }
+        .GetStarted{
+            margin-left: 28%;
+            width: 53%;
+            margin-top: 30%;
+        }
+        .overlay{
+            display: none;
+        }
+        .wrapper{
+            width:80%;
+            margin-left: 10%;
+        }
+        .LgSgCont{
+            height: 1254px;
+        }
+        .wrapperS{
+            width: 80%;
+            margin-left: 10%;
+            animation: wrappersphoneani 400ms;
+            margin-top: 100%;
+            opacity: 1;
+        }
+        .GroupMembersCont{
+            height: 720px;
+        }
+        .DevIcon{
+            height: 230px;
+            width: 31%;
+        }
+        @keyframes wrappersphoneani {
+            0%{
+                margin-top: 0;
+                opacity: 0;
+            }
+            100%{
+                margin-top: 100%;
+                opacity: 1;
+            }
+        }
+    }

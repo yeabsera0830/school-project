@@ -1,0 +1,233 @@
+body{
+    background-image: url("../res/files-1614223_1280.jpg");
+    background-size: 100%;
+}
+.Cont{
+    height: 1080px;
+    background-color: black;
+    opacity: 0.95;
+    z-index: -1;
+    border-radius: 5px;
+}
+.masterCont{
+    width: 100%;
+    height: auto;
+    
+}
+.header{
+    height: 250px;
+    width: 56%;
+    float: left;
+    opacity: 1;
+    animation: headerAni 1000ms;
+}
+.Cont.header > h1{
+    color: white;
+    font-size: 200px;
+}
+.leftCont{
+    width:22%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 1%;
+    animation: leftAni 1000ms;
+}
+.leftCont > h2{
+    color: white;
+    background-color: black;
+    z-index: 1;
+}
+.uploads{
+    height: 80px;
+    width: 100%;
+    background-color: grey;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.TypeIcon {
+    height: 100%;
+    width: 20%;
+    background: #444444;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    float: left;
+}
+.FileName {
+    padding: 5px;
+    width: 80%;
+    float: left;
+    height: 50%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+}
+.actions{
+    height: 50%;
+    float: left;
+    width: 80%;
+    padding: 5px;
+    padding-left: 18px;
+}
+.actions > button{
+    color: #fff;
+    width: 32%;
+    border-radius: 2px;
+    border-color: black;
+    background-color: black;
+    font-size: 11px;
+    padding: 7px;
+    transition: color,background-color 200ms ease;
+}
+.actions > button:hover{
+    color: black;
+    background-color: white;
+}
+.centerCont{
+    width: 56%;
+    float: left;
+    margin-right: 1%;
+    margin-top: 10px;
+    height: 805px;
+    animation: centerAni 1000ms;
+}
+.Cont.centerCont > h2{
+    color: white;    
+    font-size: 40px;
+    text-decoration-color: white;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+.formCont {
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+form > input[type="file"]{
+    display: none;
+}
+label{
+    font-size: 20px;
+    color: white;
+    font-weight: 100 !important;
+    margin-bottom: 15px !important;
+    margin: auto;
+    background-color: cornflowerblue;
+    padding: 15px;
+    border-radius: 40px;
+    transition: border,background-color 900ms ease;
+}
+label:hover{
+    border: 1px solid cornflowerblue;
+    background-color: transparent;
+    
+}
+form > p{
+    color: black;
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    border-radius: 3px;
+}
+form > button{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 45px;
+    color: white; 
+    padding: 10px;
+    transition: border 500ms ease;
+    border-radius: 40px;
+}
+form > button:hover{
+    border: 1px solid cornflowerblue;
+    
+}
+form > div > span{
+
+}
+.rightCont{
+    width: 18%;
+    float: left;
+    margin-right: 1%;
+    margin-top: -250px;
+    animation: rightAni 500ms;
+}
+/*////////////////////////animations////////////////////*/
+@keyframes headerAni{
+    0%{
+        margin-top: -250px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+@keyframes centerAni{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.95;
+    }
+}
+@keyframes leftAni{
+    0%{
+        margin-top: -52%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0%;
+        opacity: 0.95;
+    }
+}
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////*/
+
+@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+        .masterCont{
+            display: flex;
+            flex-direction: column;
+            z-index: 0;
+        }
+        .header{
+            order: 1;
+            width: 98%;
+            margin-left: 1%;
+            z-index: 1;
+        }
+        .centerCont{
+            order: 2;
+            width: 98%;
+            margin-left: 1%;
+            z-index: 1;
+        }
+        .leftCont{
+            order: 3;
+            width: 98%;
+            margin-left: 1%;
+            margin-top: 10px;
+            z-index: 1;
+        }
+        .rightCont{
+            order: 4;
+            width: 98%;
+            margin-top: 10px;
+            margin-left: 1%;
+            z-index: 1;
+        }
+    }
